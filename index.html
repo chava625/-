@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5795133603.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Dancing+Script:wght@700&family=Lobster&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Tapestry&display=swap"
+    rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/alertify.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/default.min.css"/>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+  <header class="container taskItam">
+    <h1>TODO</h1>
+    <button id="lightmode">
+      <i id="sun" class="fa-solid fa-sun"></i>
+    </button>
+  </header>
+  <main class="container">
+    <div class="taskCard addTask">
+      <div class="taskItem">
+        <button id="addBtn">+</button>
+      </div>
+      <div class="txtDiv">
+        <input type="text" class="txtInput" placeholder="Create a new todo..." />
+      </div>
+    </div>
+    <div class="taskItem">
+      <ul class="tasks" id="tasks"></ul>
+    </div>
+    <div class="taskCard final">
+      <div class="filter">
+        <button class="on btn" id="all">All</button>
+        <button class="btn" id="active">Active</button>
+        <button class="btn" id="completed">Completed</button>
+      </div>
+      <div class="Completed">
+        <button id="clearCompleted">Clear Completed</button>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p>Built by Chava © 2023</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/app.js"></script>
+
+</body>
+
+</html>
