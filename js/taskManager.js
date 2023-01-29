@@ -11,7 +11,6 @@ export const addTask = () => {
   renderTasks(tasks);
   save();
   document.querySelector('.txtInput').value = '';
-  window.location.reload();
 };
 export const save = () =>{
   localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -34,7 +33,6 @@ export const deleteTask = (id) => {
   tasks = tasks.filter((task) => task.id !== id);
   renderTasks(tasks);
   save();
-  window.location.reload();
 };
 export const active = ()=>{
   let activeTasks = tasks.filter((task)=> task.isCompleted == false);
@@ -42,7 +40,6 @@ export const active = ()=>{
 }
 export const all = ()=>{
   renderTasks(tasks);
-  window.location.reload();
 }
 export const completed = ()=>{
   let completedTasks = tasks.filter((task)=> task.isCompleted == true);
@@ -52,6 +49,5 @@ export const clearTasks = ()=>{
   tasks = tasks.filter((task)=> task.isCompleted == false);
   renderTasks(tasks)
   save();
-  window.location.reload();
 };
 
